@@ -1,12 +1,20 @@
-import sys
-import sqlite3
-import aiohttp
 import asyncio
-import time
+import sqlite3
+import sys
+
+import aiohttp
+from PyQt5.QtCore import QThread, QTimer, pyqtSignal
 from PyQt5.QtWidgets import (
-    QApplication, QMainWindow, QVBoxLayout, QPushButton, QLabel, QProgressBar, QWidget, QTableWidget, QTableWidgetItem
+    QApplication,
+    QLabel,
+    QMainWindow,
+    QProgressBar,
+    QPushButton,
+    QTableWidget,
+    QTableWidgetItem,
+    QVBoxLayout,
+    QWidget,
 )
-from PyQt5.QtCore import QTimer, QThread, pyqtSignal
 
 
 class DataLoader(QThread):
